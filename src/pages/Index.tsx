@@ -1,14 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import LandingPage from "./LandingPage";
+import InterviewPage from "./InterviewPage";
+import DashboardPage from "./DashboardPage";
+
+type AppState = "landing" | "interview" | "dashboard";
 
 const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [appState, setAppState] = useState<AppState>("landing");
+
+  const handleAnalyze = () => {
+    setAppState("interview");
+  };
+
+  const handleInterviewComplete = () => {
+    setAppState("dashboard");
+  };
+
+  const handleRestart = () => {
+    setAppState("landing");
+  };
+
+  switch (appState) {
+    case "landing":
+      return <LandingPage onAnalyze={handleAnalyze} />;
+    case "interview":
+      return <InterviewPage onComplete={handleInterviewComplete} />;
+    case "dashboard":
+      return <DashboardPage onRestart={handleRestart} />;
+    default:
+      return <LandingPage onAnalyze={handleAnalyze} />;
+  }
 };
 
 export default Index;
