@@ -5,6 +5,9 @@ import SkillRadarChart from "@/components/SkillRadarChart";
 import ReadinessGauge from "@/components/ReadinessGauge";
 import SkillScoreList from "@/components/SkillScoreList";
 import InsightCard from "@/components/InsightCard";
+import SkillGrowthChart from "@/components/SkillGrowthChart";
+import PercentileRankings from "@/components/PercentileRankings";
+import CareerPathVisualization from "@/components/CareerPathVisualization";
 import { Button } from "@/components/ui/button";
 import { Download, Share2, RefreshCw } from "lucide-react";
 
@@ -145,10 +148,32 @@ const DashboardPage = ({ onRestart }: DashboardPageProps) => {
               </div>
             </div>
 
-            {/* Bottom: Insights */}
+            {/* Skill Growth Timeline - Full Width */}
             <div
               className={`lg:col-span-12 ${isLoaded ? "animate-fade-in" : "opacity-0"}`}
               style={{ animationDelay: "600ms" }}
+            >
+              <SkillGrowthChart />
+            </div>
+
+            {/* Percentile Rankings & Career Paths */}
+            <div
+              className={`lg:col-span-6 ${isLoaded ? "animate-fade-in" : "opacity-0"}`}
+              style={{ animationDelay: "800ms" }}
+            >
+              <PercentileRankings />
+            </div>
+            <div
+              className={`lg:col-span-6 ${isLoaded ? "animate-fade-in" : "opacity-0"}`}
+              style={{ animationDelay: "900ms" }}
+            >
+              <CareerPathVisualization />
+            </div>
+
+            {/* Bottom: Insights */}
+            <div
+              className={`lg:col-span-12 ${isLoaded ? "animate-fade-in" : "opacity-0"}`}
+              style={{ animationDelay: "1000ms" }}
             >
               <InsightCard insights={insights} />
             </div>
