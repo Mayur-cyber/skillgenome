@@ -6,90 +6,90 @@
 
 @layer base {
   :root {
-    /* Core Background - Warm Cream */
-    --background: 30 30% 96%;
-    --foreground: 20 25% 20%;
+    /* Core Background - Rich Champagne */
+    --background: 35 40% 92%;
+    --foreground: 25 35% 15%;
 
-    /* Cards with Soft Glassmorphism */
-    --card: 30 25% 92%;
-    --card-foreground: 20 25% 20%;
+    /* Cards - Luxurious Ivory */
+    --card: 38 45% 88%;
+    --card-foreground: 25 35% 15%;
 
-    --popover: 30 25% 94%;
-    --popover-foreground: 20 25% 20%;
+    --popover: 36 42% 90%;
+    --popover-foreground: 25 35% 15%;
 
-    /* Primary - Warm Terracotta */
-    --primary: 15 60% 55%;
-    --primary-foreground: 30 30% 98%;
+    /* Primary - Rich Bronze/Gold */
+    --primary: 28 70% 45%;
+    --primary-foreground: 38 50% 98%;
 
-    /* Secondary - Dusty Rose */
-    --secondary: 350 35% 60%;
-    --secondary-foreground: 30 30% 98%;
+    /* Secondary - Deep Mauve */
+    --secondary: 340 40% 50%;
+    --secondary-foreground: 38 50% 98%;
 
-    /* Muted - Soft Taupe */
-    --muted: 30 15% 85%;
-    --muted-foreground: 20 15% 45%;
+    /* Muted - Warm Sand */
+    --muted: 35 30% 82%;
+    --muted-foreground: 25 20% 40%;
 
-    /* Accent - Sage Green */
-    --accent: 145 25% 50%;
-    --accent-foreground: 30 30% 98%;
+    /* Accent - Rich Olive */
+    --accent: 85 35% 40%;
+    --accent-foreground: 38 50% 98%;
 
-    /* Destructive - Muted Coral */
-    --destructive: 0 50% 55%;
-    --destructive-foreground: 30 30% 98%;
+    /* Destructive - Deep Burgundy */
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 38 50% 98%;
 
-    --border: 30 20% 80%;
-    --input: 30 20% 88%;
-    --ring: 15 60% 55%;
+    --border: 35 35% 75%;
+    --input: 35 30% 85%;
+    --ring: 28 70% 45%;
 
     --radius: 0.75rem;
 
-    /* Custom Colors - Nude Palette */
-    --cyan-glow: 15 60% 55%;
-    --purple-glow: 350 35% 60%;
-    --green-glow: 145 25% 50%;
-    --magenta-glow: 0 50% 55%;
-    --glass-bg: 30 25% 90%;
-    --glass-border: 30 20% 75%;
+    /* Custom Colors - Rich Luxury */
+    --cyan-glow: 28 70% 45%;
+    --purple-glow: 340 40% 50%;
+    --green-glow: 85 35% 40%;
+    --magenta-glow: 0 55% 45%;
+    --glass-bg: 36 40% 86%;
+    --glass-border: 35 30% 70%;
 
-    --sidebar-background: 30 25% 94%;
-    --sidebar-foreground: 20 25% 20%;
-    --sidebar-primary: 15 60% 55%;
-    --sidebar-primary-foreground: 30 30% 98%;
-    --sidebar-accent: 30 20% 88%;
-    --sidebar-accent-foreground: 20 25% 20%;
-    --sidebar-border: 30 20% 80%;
-    --sidebar-ring: 15 60% 55%;
+    --sidebar-background: 36 42% 90%;
+    --sidebar-foreground: 25 35% 15%;
+    --sidebar-primary: 28 70% 45%;
+    --sidebar-primary-foreground: 38 50% 98%;
+    --sidebar-accent: 35 30% 82%;
+    --sidebar-accent-foreground: 25 35% 15%;
+    --sidebar-border: 35 35% 75%;
+    --sidebar-ring: 28 70% 45%;
   }
 
   .dark {
-    /* Dark Mode - Deep Warm Brown */
-    --background: 20 20% 8%;
-    --foreground: 30 20% 90%;
-    --card: 20 18% 12%;
-    --card-foreground: 30 20% 90%;
-    --popover: 20 18% 12%;
-    --popover-foreground: 30 20% 90%;
-    --primary: 15 55% 50%;
-    --primary-foreground: 30 30% 98%;
-    --secondary: 350 30% 55%;
-    --secondary-foreground: 30 20% 90%;
-    --muted: 20 15% 18%;
-    --muted-foreground: 30 15% 55%;
-    --accent: 145 20% 45%;
-    --accent-foreground: 30 30% 98%;
-    --destructive: 0 45% 50%;
-    --destructive-foreground: 30 20% 90%;
-    --border: 20 15% 20%;
-    --input: 20 15% 18%;
-    --ring: 15 55% 50%;
+    /* Dark Mode - Deep Espresso Luxury */
+    --background: 25 30% 6%;
+    --foreground: 35 30% 92%;
+    --card: 25 25% 10%;
+    --card-foreground: 35 30% 92%;
+    --popover: 25 25% 10%;
+    --popover-foreground: 35 30% 92%;
+    --primary: 32 65% 48%;
+    --primary-foreground: 38 50% 98%;
+    --secondary: 340 35% 48%;
+    --secondary-foreground: 35 30% 92%;
+    --muted: 25 20% 15%;
+    --muted-foreground: 35 20% 55%;
+    --accent: 85 30% 38%;
+    --accent-foreground: 38 50% 98%;
+    --destructive: 0 50% 42%;
+    --destructive-foreground: 35 30% 92%;
+    --border: 25 20% 18%;
+    --input: 25 20% 15%;
+    --ring: 32 65% 48%;
 
-    /* Custom Colors - Dark Nude */
-    --cyan-glow: 15 55% 50%;
-    --purple-glow: 350 30% 55%;
-    --green-glow: 145 20% 45%;
-    --magenta-glow: 0 45% 50%;
-    --glass-bg: 20 18% 14%;
-    --glass-border: 20 15% 25%;
+    /* Custom Colors - Dark Luxury */
+    --cyan-glow: 32 65% 48%;
+    --purple-glow: 340 35% 48%;
+    --green-glow: 85 30% 38%;
+    --magenta-glow: 0 50% 42%;
+    --glass-bg: 25 25% 12%;
+    --glass-border: 25 20% 22%;
   }
 }
 
