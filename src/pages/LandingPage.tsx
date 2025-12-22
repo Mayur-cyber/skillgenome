@@ -34,16 +34,13 @@ const LandingPage = ({ onAnalyze }: LandingPageProps) => {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight mb-8 tracking-tight">
-              <span className="text-foreground">Decodes </span>
-              <span className="gradient-text text-glow-cyan">real skills</span>
-              <span className="text-foreground">,</span>
+              <span className="text-foreground">From resume data to </span>
+              <span className="gradient-text text-glow-cyan">talent intelligence</span>
+              <span className="text-foreground">:</span>
               <br />
-              <span className="text-foreground">depth, and </span>
-              <span className="gradient-text text-glow-purple">future readiness</span>
-              <br />
-              <span className="text-muted-foreground text-3xl sm:text-4xl lg:text-5xl font-semibold">
-                — beyond resumes.
-              </span>
+              <span className="text-foreground">quantifying </span>
+              <span className="gradient-text text-glow-purple">skill, depth, and future readiness</span>
+              <span className="text-foreground">.</span>
             </h1>
 
             {/* Subheadline */}
