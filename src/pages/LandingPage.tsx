@@ -45,9 +45,7 @@ const LandingPage = ({ onAnalyze }: LandingPageProps) => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-14 leading-relaxed">
-              Human Capital is a spectrum. Discover your unique{" "}
-              <span className="text-primary font-bold">Skill DNA</span>
-              —complex, measurable, and interconnected chains that define your true potential.
+              — Beyond the resume. Beyond the hype.
             </p>
 
             {/* Features Row */}
