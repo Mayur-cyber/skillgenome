@@ -108,13 +108,13 @@ const DashboardPage = ({ onRestart }: DashboardPageProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Left: Skill DNA Map */}
             <div
-              className={`lg:col-span-7 glass-card p-6 flex flex-col items-center justify-center ${
+              className={`lg:col-span-7 glass-card p-6 flex flex-col items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-primary/20 ${
                 isLoaded ? "animate-scale-in" : "opacity-0"
               }`}
             >
               <div className="mb-4">
-                <h2 className="text-lg font-semibold text-foreground text-center">Skill DNA Map</h2>
-                <p className="text-xs text-muted-foreground font-mono text-center">
+                <h2 className="text-lg font-semibold text-primary text-center">Skill DNA Map</h2>
+                <p className="text-xs text-secondary font-mono text-center tracking-wider">
                   MULTI-DIMENSIONAL ANALYSIS
                 </p>
               </div>
