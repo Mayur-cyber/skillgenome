@@ -13,6 +13,13 @@ const LandingPage = ({ onAnalyze }: LandingPageProps) => {
     <div className="min-h-screen relative overflow-hidden">
       <DNABackground />
       
+      {/* Ocean Wave Background Elements */}
+      <div className="ocean-current" />
+      <div className="ocean-wave ocean-wave-1" />
+      <div className="ocean-wave ocean-wave-2" />
+      <div className="ocean-wave ocean-wave-3" />
+      <div className="ocean-wave ocean-wave-4" />
+      
       {/* Floating Orb Decorations */}
       <div className="floating-orb floating-orb-1" />
       <div className="floating-orb floating-orb-2" />
