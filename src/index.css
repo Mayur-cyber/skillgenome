@@ -477,13 +477,13 @@
   }
 }
 
-@keyframes ripple {
+@keyframes ripple-expand {
   0% {
-    transform: scale(0.8);
-    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
   }
   100% {
-    transform: scale(2.5);
+    transform: translate(-50%, -50%) scale(4);
     opacity: 0;
   }
 }
@@ -498,4 +498,45 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Button Ripple Effect */
+.btn-ripple {
+  @apply relative overflow-hidden;
+}
+
+.btn-ripple::before {
+  content: '';
+  @apply absolute w-8 h-8 rounded-full pointer-events-none;
+  background: radial-gradient(circle, hsl(var(--primary-foreground) / 0.4) 0%, transparent 70%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  left: var(--ripple-x, 50%);
+  top: var(--ripple-y, 50%);
+}
+
+.btn-ripple:hover::before {
+  animation: ripple-expand 0.6s ease-out forwards;
+}
+
+/* Ocean Glow Ripple for special buttons */
+.btn-ocean-ripple {
+  @apply relative overflow-hidden;
+}
+
+.btn-ocean-ripple::after {
+  content: '';
+  @apply absolute inset-0 pointer-events-none rounded-xl;
+  background: radial-gradient(circle at var(--ripple-x, 50%) var(--ripple-y, 50%), 
+    hsl(185 60% 60% / 0.3) 0%, 
+    hsl(170 50% 50% / 0.1) 30%, 
+    transparent 70%);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.btn-ocean-ripple:hover::after {
+  transform: scale(2.5);
+  opacity: 1;
 }
