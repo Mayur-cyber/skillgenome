@@ -5,19 +5,19 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 btn-ripple",
   {
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-lg shadow-destructive/20",
-        outline: "border-2 border-border bg-transparent hover:bg-muted hover:text-foreground hover:border-primary/50",
+        outline: "border-2 border-border bg-transparent hover:bg-muted hover:text-foreground hover:border-primary/50 btn-ocean-ripple",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-lg shadow-secondary/20 hover:shadow-xl",
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        glow: "bg-primary text-primary-foreground glow-button hover:scale-[1.02] active:scale-[0.98]",
-        genome: "bg-gradient-to-r from-primary via-primary to-secondary text-primary-foreground glow-button hover:scale-[1.02] active:scale-[0.98] font-bold tracking-wide",
-        glass: "bg-card/50 backdrop-blur-2xl border-2 border-glass-border text-foreground hover:bg-card/70 hover:border-primary/30 shadow-lg",
+        glow: "bg-primary text-primary-foreground glow-button hover:scale-[1.02] active:scale-[0.98] btn-ocean-ripple",
+        genome: "bg-gradient-to-r from-primary via-primary to-secondary text-primary-foreground glow-button hover:scale-[1.02] active:scale-[0.98] font-bold tracking-wide btn-ocean-ripple",
+        glass: "bg-card/50 backdrop-blur-2xl border-2 border-glass-border text-foreground hover:bg-card/70 hover:border-primary/30 shadow-lg btn-ocean-ripple",
       },
       size: {
         default: "h-11 px-6 py-2",
